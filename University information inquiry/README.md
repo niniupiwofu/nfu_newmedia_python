@@ -17,7 +17,6 @@ University information inquiry
 ### 模块
 os
 ### 数据
-* [简中CLDR localenames](https://github.com/unicode-cldr/cldr-localenames-modern/blob/master/main/zh-Hans/territories.json)
-
+csvfile.ipynb
 ## 作者成员：
 见[_team_.tsv](_team_/_team_.tsv)
