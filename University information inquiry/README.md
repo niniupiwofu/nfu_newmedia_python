@@ -20,4 +20,4 @@ os
 * [简中CLDR localenames](https://github.com/unicode-cldr/cldr-localenames-modern/blob/master/main/zh-Hans/territories.json)
 
 ## 作者成员：
-见* [_team_.tsv](https://github.com/niniupiwofu/nfu_newmedia_python/blob/master/University/_team_.tsv）
+见[_team_.tsv](_team_/_team_.tsv)
