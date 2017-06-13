@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>您选取的是：</p>
+<table>
+<tr><td>院校名称：</td><td>{{ the_school_name }}</td></tr>
+<tr><td>对应资料：</td><td>{{ the_school_code }}</td></tr>
+</table>
+
+{% endblock %}
