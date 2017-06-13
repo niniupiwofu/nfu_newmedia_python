@@ -16,8 +16,7 @@ University_inquiry
 ## 从输入到输出，本组作品使用了：
 ### 模块
 requests 
-
 ### 数据
-csvfile.ipynb
+data\基本情况.csv
 ## 作者成员：
 见[_team_.tsv](_team_/_team_.tsv)
