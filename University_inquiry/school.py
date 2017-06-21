@@ -1,26 +1,37 @@
 # -*- coding: utf-8 -*- 
 # 类化，以备模块使用module调用（module）
-
+import csv
 """创建一个类"""
-class school_list_name (object):
+class gd_school(object):
 
-    def __init__(self, fn='data\基本情况.tsv'):
-       import csv
-       with open(fn, 'r', encoding='utf8') as csvfile:
-           reader = csv.DictReader(csvfile, fieldnames=['c_code', 'c_name'], delimiter='\t')
-           fieldnames = reader.fieldnames
+    def __init__(self, fn='data//uni.csv'):
+        data = []
 
-           list_dict_school = []
-           for row in reader:
-                  list_dict_school.append(dict(row))
+        with open(fn, 'r', encoding='utf8') as csvfile:
+            reader = csv.DictReader(csvfile, delimiter=',')
+            fieldnames = reader.fieldnames
+            for row in reader:
+                data.append(dict(row))
 
-           self.data = {d['c_code']:d['c_name'] for d in list_dict_school}
+        # clean data 院校名称
+        for d in data:
+            d['院校名称'] = d['院校名称'].strip()
 
-    def school_name(self, c_code=''):
-        c_name =  self.data.get(c_code, None)
-        return (c_name)
+        list_school_names = [d['院校名称'] for d in data]
 
-c = school_list_name()
+
+        #test
+        #print(list_school_names)
+        #print(data)
+
+        self.data = data
+        self.list_names = list_school_names
+        
+
+
+
 
 #測試   
-
+#gd_s = gd_school()
+#print(gd_s.data)
+#print(gd_s.list_names)
