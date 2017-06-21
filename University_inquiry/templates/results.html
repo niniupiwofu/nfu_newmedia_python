@@ -5,9 +5,11 @@
 <h2>{{ the_title }}</h2>
 
 <p>您选取的是：</p>
-<table>
-<tr><td>院校名称：</td><td>{{ the_school_name }}</td></tr>
-<tr><td>对应资料：</td><td>{{ the_school_code }}</td></tr>
+<table border=1>
+<caption align=bottom>【院校一栏】</caption>
+<tr><th>名称</th><th>{{the_school_name}}</th></tr>
+<tr><td>基本情况</td><td>{{the_school_info}}</td></tr>
 </table>
+
 
 {% endblock %}
