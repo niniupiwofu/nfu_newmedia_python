@@ -1,14 +1,17 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<body style="background-color:blue">
+<body style="background-color:LightGrey">
 <h2>{{ the_title }}</h2>
 
 <p>您选取的是：</p>
 <table border=1>
 <caption align=bottom>【院校一栏】</caption>
-<tr><th>名称</th><th>{{the_school_name}}</th></tr>
-<tr><td>基本情况</td><td>{{the_school_info}}</td></tr>
+<tr><th>名称:</th><th>{{  the_school_name  }}</th></tr>
+<tr><td>毕业生数:</td><td>{{  the_school_1  }}</td></tr>
+<tr><td>招生数:</td><td>{{  the_school_2  }}</td></tr>
+<tr><td>在校学生数:</td><td>{{  the_school_3  }}</td></tr>
+<tr><td>校本部教职工人数:</td><td>{{  the_school_4  }}</td></tr>
 </table>
 
 
